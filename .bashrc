@@ -122,8 +122,11 @@ test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shel
 # pyenv(?)
 export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
+export WORKON_HOME=~/.virtualenvs
+export PROJECT_HOME=~/workspace
 eval "$(pyenv init -)"
 pyenv virtualenvwrapper
+pyenv virtualenvwrapper_lazy
 
 # Anaconda2 installer
 #export PATH="/Users/ssrivatsa/anaconda2/bin:$PATH"
