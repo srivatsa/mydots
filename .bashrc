@@ -22,14 +22,15 @@
 # a patch to the cygwin mailing list.
 
 # User dependent .bashrc file
-
+export GOPATH=${HOME}/go
+export GOBIN=${GOPATH}/go/bin
 # If not running interactively, don't do anything
 [[ "$-" != *i* ]] && return
 
 # Shell Options
 #
 export PATH=/bin:~/bin:/usr/local/bin:/usr/bin:/usr/sbin:/sbin:/opt/X11/bin
-export PATH=${PATH}:/usr/local/sbin:/Users/ssrivatsa/.cargo/bin
+export PATH=${PATH}:/usr/local/sbin:/Users/ssrivatsa/.cargo/bin:${GOBIN}
 #export PATH="$HOME/.cargo/bin:$PATH"
 
 #

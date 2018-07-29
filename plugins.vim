@@ -40,6 +40,7 @@ Plugin 'racer-rust/vim-racer'
 Plugin 'bling/vim-airline'
 Plugin 'godlygeek/tabular'
 Plugin 'sjl/gundo.vim'
+Plugin 'altercation/vim-colors-solarized.git'
 " All of your Plugins must be added before the following line
 
 call vundle#end()            " required
