@@ -23,7 +23,7 @@
 
 # User dependent .bashrc file
 export GOPATH=${HOME}/go
-export GOBIN=${GOPATH}/go/bin
+export GOBIN=${GOPATH}/bin
 # If not running interactively, don't do anything
 [[ "$-" != *i* ]] && return
 
