@@ -29,8 +29,10 @@ export GOBIN=${GOPATH}/bin
 
 # Shell Options
 #
+#export PATH=~/anaconda3/bin
 export PATH=/bin:~/bin:/usr/local/bin:/usr/bin:/usr/sbin:/sbin:/opt/X11/bin
 export PATH=${PATH}:/usr/local/sbin:/Users/ssrivatsa/.cargo/bin:${GOBIN}
+
 #export PATH="$HOME/.cargo/bin:$PATH"
 
 #
