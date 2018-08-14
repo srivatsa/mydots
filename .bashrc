@@ -28,14 +28,19 @@ else
     echo  "${HOME}/perl5/lib/perl5/ not found"
 fi
 if [ -d ${HOME}/go ]; then
-    export GOPATH=${HOME}/go
+    export GOPATH=${HOME}/go && export GOBIN=${GOPATH}/bin
 else
     echo "${HOME}/go not found"
 fi
-if [ -z ${GOPATH+x} ]; then
-    echo  "${GOPATH} not set"
+if [ -d "${HOME}/.cargo/bin/" ]; then
+    export CARGOBIN=${HOME}/.cargo/bin/
 else
-    export GOBIN=${GOPATH}/bin
+    echo "${HOME}/.cargo/bin/ not found"
+fi
+if [ -d "${HOME}/git_wa/github-com/git-scripts/" ]; then
+    export GITSCRIPTS=${HOME}/git_wa/github-com/git-scripts/
+else
+    echo "${HOME}/git_wa/github-com/git-scripts/ not found"
 fi
 
 # If not running interactively, don't do anything
@@ -45,10 +50,7 @@ fi
 #
 #export PATH=~/anaconda3/bin
 export PATH=/bin:~/bin:/usr/local/bin:/usr/bin:/usr/sbin:/sbin:/opt/X11/bin
-export PATH=${PATH}:/usr/local/sbin:/Users/ssrivatsa/.cargo/bin:${GOBIN}
-
-#export PATH="$HOME/.cargo/bin:$PATH"
-
+export PATH=${PATH}:/usr/local/sbin:${CARGOBIN}:${GOBIN}:${GITSCRIPTS}
 #
 # See man bash for more options...
 #
