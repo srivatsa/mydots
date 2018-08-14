@@ -22,8 +22,22 @@
 # a patch to the cygwin mailing list.
 
 # User dependent .bashrc file
-export GOPATH=${HOME}/go
-export GOBIN=${GOPATH}/bin
+if [ -d "${HOME}/perl5/lib/perl5/" ]; then
+    export PERL5LIB=${HOME}/perl5/lib/perl5/
+else
+    echo  "${HOME}/perl5/lib/perl5/ not found"
+fi
+if [ -d ${HOME}/go ]; then
+    export GOPATH=${HOME}/go
+else
+    echo "${HOME}/go not found"
+fi
+if [ -z ${GOPATH+x} ]; then
+    echo  "${GOPATH} not set"
+else
+    export GOBIN=${GOPATH}/bin
+fi
+
 # If not running interactively, don't do anything
 [[ "$-" != *i* ]] && return
 
