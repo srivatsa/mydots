@@ -114,4 +114,4 @@ syntax on
 
 " the 'modeline' below tells vim that this is a vim command file (duh?)
 " vim: set ft=vim :
-
+:set autoread
