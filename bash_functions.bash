@@ -145,8 +145,21 @@ fh() {
 #
 vs(){
   #List all vagrant boxes available in the system including its status, and try to access the selected one via ssh
-  cd $(cat ~/.vagrant.d/data/machine-index/index | jq '.machines[] |\
-  {name, vagrantfile_path, state}' | jq '.name + "," + .state  + "," + .vagrantfile_path'| \
-  sed 's/^"\(.*\)"$/\1/'| column -s, -t | sort -rk 2 | fzf | awk '{print $3}'); vagrant ssh
+  cd $(cat ~/.vagrant.d/data/machine-index/index | jq '.machines[] | {name, vagrantfile_path, state}' | jq '.name + "," + .state  + "," + .vagrantfile_path'| sed 's/^"\(.*\)"$/\1/'| column -s, -t | sort -rk 2 | fzf | awk '{print $3}'); vagrant ssh
 }
+
+############
+### g) GPG auto commit-signing setup
+#
+[ -f ~/.gnupg/gpg-agent.env ] && source ~/.gnupg/gpg-agent.env
+if [ -S "${GPG_AGENT_INFO%%:*}" ]; then
+  export GPG_AGENT_INFO
+i#else
+  #eval $(gpg-agent --daemon --log-file /tmp/gpg.log --write-env-file ~/.gnupg/gpg-agent.env --pinentry-program /usr/local/bin/pinentry-mac)
+  #eval $(gpg-agent --daemon --log-file /tmp/gpg.log --pinentry-program /usr/local/bin/pinentry-mac)
+fi
+# if you have issues with ssh caused by pinentry, try this
+#if [[ -n "$SSH_CONNECTION" ]] ;then
+#    export PINENTRY_USER_DATA="USE_CURSES=1"
+#fi
 #

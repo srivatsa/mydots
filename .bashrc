@@ -152,6 +152,9 @@ pyenv virtualenvwrapper_lazy
 
 # Some(thing/one) added this!
 export GPG_TTY=$(tty)
+if [[ -n "$SSH_CONNECTION" ]] ;then
+    export PINENTRY_USER_DATA="USE_CURSES=1"
+fi
 
 # prompt
 PS1="\[\e[1;34m\]\n[\$(date +%H%M-%Z)]\[\e]0;\w\a\]\[\e[32m\]\u@\h \[\e[33m\]\w\[\e[0m\]\n\$ "

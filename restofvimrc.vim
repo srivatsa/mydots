@@ -28,7 +28,14 @@ inoremap <expr> <Tab> pumvisible() ? "<C-N>" : "<C-R>=completor#do('complete')<C
 " insert comment delimiters
 let @e = 'O# |10a=O'
 let @b = 'O# |77a-o#  o# |77a-ku'
-
+let @d = '|^R=strftime("%FT%T%z")'
+"let @d = 'o<C-R>=strftime("#%Y-%m-%d %a %I:%M %p")<CR><Esc>'
+nmap <F3> o<C-R>=strftime("# %Y-%m-%d %a %I:%M %p")<CR><Esc>o
+" 2018-11-04 Sun 12:00 PM
+"imap <F3> <C-R>=strftime("%Y-%m-%d %a %I:%M %p")O<CR><Esc>
+"
+"# 2018-11-04 Sun 12:03 PM
+"
 " typing @b will print the below 3 lines
 "# |-----------------------------------------------------------------------------
 "#
