@@ -102,8 +102,8 @@ export HISTIGNORE=?:??
 # write every command to history
 #export PROMPT_COMMAND="${PROMPT_COMMAND:+$PROMPT_COMMAND$'\n'}history -a; history -c; history -r"
 unset PROMPT_COMMAND
-export HISTFILESIZE=9000
-export HISTSIZE=9000
+export HISTFILESIZE=10000000
+export HISTSIZE=10000000
 # Ignore some controlling instructions
 # HISTIGNORE is a colon-delimited list of patterns which should be excluded.
 # The '&' is a special pattern which suppresses duplicate entries.
@@ -162,3 +162,4 @@ PS1="\[\e[1;34m\]\n[\$(date +%H%M-%Z)]\[\e]0;\w\a\]\[\e[32m\]\u@\h \[\e[33m\]\w\
 # perl (?)
 PERL_MB_OPT="--install_base \"/Users/ssrivatsa/perl5\""; export PERL_MB_OPT;
 PERL_MM_OPT="INSTALL_BASE=/Users/ssrivatsa/perl5"; export PERL_MM_OPT;
+export PATH="/usr/local/opt/openssl@1.1/bin:$PATH"
