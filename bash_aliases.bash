@@ -42,6 +42,8 @@ alias 7c-start='cd ~ssrivatsa/vagbox/7centos/;vagrant up;vagrant ssh'
 alias 7c-ssh='cd ~ssrivatsa/vagbox/7centos/;vagrant ssh'
 alias 27c-start='cd ~ssrivatsa/vagbox/22-7centos/;vagrant up;vagrant ssh'
 alias 27c-ssh='cd ~ssrivatsa/vagbox/22-7centos/;vagrant ssh'
+alias 30f-ssh='cd ~ssrivatsa/vagbox/fedora30/;vagrant ssh'
+alias 30f-start='cd ~ssrivatsa/vagbox/fedora30/;vagrant up; vagrant ssh'
 
 # Process SFDC specific aliases
 if [ -f "${HOME}/mydots/bash_sfdcaliases.bash" ]; then
