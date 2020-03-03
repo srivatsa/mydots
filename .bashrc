@@ -163,3 +163,6 @@ PS1="\[\e[1;34m\]\n[\$(date +%H%M-%Z)]\[\e]0;\w\a\]\[\e[32m\]\u@\h \[\e[33m\]\w\
 PERL_MB_OPT="--install_base \"/Users/ssrivatsa/perl5\""; export PERL_MB_OPT;
 PERL_MM_OPT="INSTALL_BASE=/Users/ssrivatsa/perl5"; export PERL_MM_OPT;
 export PATH="/usr/local/opt/openssl@1.1/bin:$PATH"
+
+# br is a file explorer. Written in Rust.
+source /Users/ssrivatsa/Library/Preferences/org.dystroy.broot/launcher/bash/br
