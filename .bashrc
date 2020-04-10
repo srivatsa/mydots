@@ -37,8 +37,8 @@ if [ -d "${HOME}/.cargo/bin/" ]; then
 else
     echo "${HOME}/.cargo/bin/ not found"
 fi
-if [ -d "${HOME}/git_wa/github-com/git-scripts/" ]; then
-    export GITSCRIPTS=${HOME}/git_wa/github-com/git-scripts/
+if [ -d "${HOME}/git_wa/github/git-scripts/" ]; then
+    export GITSCRIPTS=${HOME}/git_wa/github/git-scripts/
 else
     echo "${HOME}/git_wa/github-com/git-scripts/ not found"
 fi

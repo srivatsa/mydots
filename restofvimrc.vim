@@ -59,8 +59,8 @@ autocmd FileType perl colorscheme dracula
 
 " Enable Fold settings
 set foldmethod=indent
-set foldlevel=99
-set textwidth=79
+"set foldlevel=99
+"set textwidth=79
 let python_highlight_all=1
 syntax on
 

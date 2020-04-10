@@ -35,6 +35,8 @@ alias set-up='/cygdrive/c/APPS/cygwin/setup-x86.exe'
 alias gwa="cd $GIT_WA"
 alias pwa="cd $P4_WA"
 alias vi='vim'
+alias j='jrnl'
+alias jdj='jrnl dj'
 
 alias 14u-start='cd ~ssrivatsa/vagbox/14trusty/;vagrant up;vagrant ssh'
 alias 14u-ssh='cd ~ssrivatsa/vagbox/14trusty/;vagrant ssh'
