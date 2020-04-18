@@ -154,7 +154,7 @@ pyenv virtualenvwrapper_lazy
 #export PATH="/Users/ssrivatsa/anaconda2/bin:$PATH"
 
 # Some(thing/one) added this!
-export GPG_TTY=$(tty)
+export GPG_TTY=${TTY}
 if [[ -n "$SSH_CONNECTION" ]] ;then
     export PINENTRY_USER_DATA="USE_CURSES=1"
 fi

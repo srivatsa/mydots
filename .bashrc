@@ -49,7 +49,7 @@ fi
 # Shell Options
 #
 #export PATH=~/anaconda3/bin
-export PATH=/bin:~/bin:/usr/local/bin:/usr/bin:/usr/sbin:/sbin:/opt/X11/bin
+export PATH=/bin:${HOME}/bin:/usr/local/bin:/usr/bin:/usr/sbin:/sbin:/opt/X11/bin
 export PATH=${PATH}:/usr/local/sbin:${CARGOBIN}:${GOBIN}:${GITSCRIPTS}
 #
 # See man bash for more options...
