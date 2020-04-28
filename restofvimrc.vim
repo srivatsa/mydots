@@ -50,6 +50,7 @@ autocmd FileType sh colorscheme gruvbox
 autocmd FileType vim colorscheme railscasts
 autocmd FileType rust colorscheme mustang
 autocmd FileType perl colorscheme dracula
+autocmd FileType markdown set nospell
 
 " turn on syntax highlighting
 :syntax enable
