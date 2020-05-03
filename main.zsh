@@ -105,8 +105,8 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-if [ -f ${HOME}/mydots/local.zshrc ]; then
-    source ${HOME}/mydots/local.zshrc
+if [ -f ${HOME}/mydots/local.zsh ]; then
+    source ${HOME}/mydots/local.zsh
 fi
 
 source /Users/ssrivatsa/Library/Preferences/org.dystroy.broot/launcher/bash/br

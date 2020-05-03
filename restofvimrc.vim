@@ -47,9 +47,10 @@ nmap <F3> o<C-R>=strftime("# %Y-%m-%d %a %I:%M %p")<CR><Esc>o
 "autocmd FileType python colorscheme molokai
 autocmd FileType python colorscheme gruvbox
 autocmd FileType sh colorscheme gruvbox
-autocmd FileType vim colorscheme railscasts
+autocmd FileType vim colorscheme gruvbox
 autocmd FileType rust colorscheme mustang
 autocmd FileType perl colorscheme dracula
+autocmd FileType markdown colorscheme gruvbox
 autocmd FileType markdown set nospell
 
 " turn on syntax highlighting
