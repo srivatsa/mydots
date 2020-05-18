@@ -37,6 +37,7 @@ alias pwa="cd $P4_WA"
 alias vi='vim'
 alias j='jrnl'
 alias jdj='jrnl dj'
+alias jqj='jrnl qj'
 
 alias 14u-start='cd ~ssrivatsa/vagbox/14trusty/;vagrant up;vagrant ssh'
 alias 14u-ssh='cd ~ssrivatsa/vagbox/14trusty/;vagrant ssh'
@@ -48,9 +49,9 @@ alias 30f-ssh='cd ~ssrivatsa/vagbox/fedora30/;vagrant ssh'
 alias 30f-start='cd ~ssrivatsa/vagbox/fedora30/;vagrant up; vagrant ssh'
 
 # Process SFDC specific aliases
-if [ -f "${HOME}/mydots/bash_sfdcaliases.bash" ]; then
-    source "${HOME}/mydots/bash_sfdcaliases.bash"
-fi
+#if [ -f "${HOME}/mydots/bash_sfdcaliases.bash" ]; then
+#    source "${HOME}/mydots/bash_sfdcaliases.bash"
+#fi
 
 #
 # Misc :)
