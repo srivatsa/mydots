@@ -82,6 +82,9 @@ if [[ -n "$SSH_CONNECTION" ]] ;then
     export PINENTRY_USER_DATA="USE_CURSES=1"
 fi
 
+# Set pager for BAT
+export BAT_PAGER="less"
+
 # perl (?)
 PERL_MB_OPT="--install_base \"/Users/ssrivatsa/perl5\""; export PERL_MB_OPT;
 PERL_MM_OPT="INSTALL_BASE=/Users/ssrivatsa/perl5"; export PERL_MM_OPT;
