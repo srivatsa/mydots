@@ -29,6 +29,7 @@ alias ll='ls -l'      # long list
 alias la='ls -A'      # all but . and ..
 alias l='ls -CF'      #
 alias lh='ls -laFhtr'
+alias lj='ls -laFht'
 #
 # local dirs -
 alias set-up='/cygdrive/c/APPS/cygwin/setup-x86.exe'
