@@ -6,7 +6,7 @@ map <F4> :NERDTreeToggle<CR>
 let NERDTreeShowHidden=1
 
 " map the F6 key to toggle Gundo tree
-nnoremap <F6> :GundoToggle<CR>
+nnoremap <F6> :MundoToggle<CR>
 
 if executable('rls')
     au User lsp_setup call lsp#register_server({
@@ -30,7 +30,7 @@ let @e = 'O# |10a=O'
 let @b = 'O# |77a-o#  o# |77a-ku'
 let @d = '|^R=strftime("%FT%T%z")'
 "let @d = 'o<C-R>=strftime("#%Y-%m-%d %a %I:%M %p")<CR><Esc>'
-nmap <F3> o<C-R>=strftime("# %Y-%m-%d %a %I:%M %p")<CR><Esc>o
+nmap <F3> i<C-R>=strftime(" %Y-%m-%d %a %I:%M %p")<CR><Esc>
 " 2018-11-04 Sun 12:00 PM
 "imap <F3> <C-R>=strftime("%Y-%m-%d %a %I:%M %p")O<CR><Esc>
 "
@@ -61,8 +61,9 @@ autocmd FileType markdown set nospell
 
 " Enable Fold settings
 set foldmethod=indent
-"set foldlevel=99
-"set textwidth=79
+set foldlevel=99
+set nofoldenable
+set textwidth=79
 let python_highlight_all=1
 syntax on
 
@@ -73,7 +74,7 @@ syntax on
 ":set si
 
 " optimize syntax highlighting for a dark terminal
-":set bg=dark
+:set bg=dark
 
 " tabs are 4 spaces wide
 :set ts=5
@@ -118,6 +119,10 @@ syntax on
 " lightly highlight the current column in which the cursor is placed (turn this off if it gets annoying)
 
 :set cursorcolumn
+
+" display a light vertical line at 80 chars
+
+:set colorcolumn=80
 
 " tell vim to scan the file for a modeline that contains in-line vim commands and options, just for that file
 :set modeline

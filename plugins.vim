@@ -39,10 +39,10 @@ Plugin 'racer-rust/vim-racer'
 Plugin 'bling/vim-airline'
 Plugin 'flazz/vim-colorschemes'
 Plugin 'godlygeek/tabular'
-Plugin 'sjl/gundo.vim'
 Plugin 'altercation/vim-colors-solarized.git'
 Plugin 'gabrielelana/vim-markdown'
 Plugin 'dhruvasagar/vim-table-mode'
+Plugin 'simnalamburt/vim-mundo.git'
 " All of your Plugins must be added before the following line
 
 call vundle#end()            " required
