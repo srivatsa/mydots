@@ -44,14 +44,19 @@ nmap <F3> i<C-R>=strftime(" %Y-%m-%d %a %I:%M %p")<CR><Esc>
 
 "# |==========
 
+" All txt files to be treated as markdown
+autocmd BufEnter,BufRead,BufNewFile *.txt :set filetype=markdown
+
 "autocmd FileType python colorscheme molokai
-autocmd FileType python colorscheme gruvbox
-autocmd FileType sh colorscheme gruvbox
-autocmd FileType vim colorscheme gruvbox
-autocmd FileType rust colorscheme mustang
+autocmd FileType sh colorscheme dracula
+autocmd FileType zsh colorscheme dracula
 autocmd FileType perl colorscheme dracula
+autocmd FileType text colorscheme dracula
+autocmd FileType vim colorscheme gruvbox
+autocmd FileType python colorscheme gruvbox
 autocmd FileType markdown colorscheme gruvbox
 autocmd FileType markdown set nospell
+autocmd FileType rust colorscheme mustang
 
 " turn on syntax highlighting
 :syntax enable
@@ -63,7 +68,7 @@ autocmd FileType markdown set nospell
 set foldmethod=indent
 set foldlevel=99
 set nofoldenable
-set textwidth=79
+set textwidth=99
 let python_highlight_all=1
 syntax on
 
