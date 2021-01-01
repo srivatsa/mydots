@@ -152,6 +152,7 @@ pyenv virtualenvwrapper_lazy
 
 # Some(thing/one) added this!
 export GPG_TTY=$(tty)
+echo "Set GPG_TTY to ${GPG_TTY}"
 if [[ -n "$SSH_CONNECTION" ]] ;then
     export PINENTRY_USER_DATA="USE_CURSES=1"
 fi

@@ -32,7 +32,7 @@ alias lh='ls -laFhtr'
 alias lj='ls -laFht'
 #
 # local dirs -
-alias set-up='/cygdrive/c/APPS/cygwin/setup-x86.exe'
+#alias set-up='/cygdrive/c/APPS/cygwin/setup-x86.exe'
 alias gwa="cd $GIT_WA"
 alias pwa="cd $P4_WA"
 alias vi='vim'
@@ -40,14 +40,18 @@ alias j='jrnl'
 alias jdj='jrnl dj'
 alias jqj='jrnl qj'
 
-alias 14u-start='cd ~ssrivatsa/vagbox/14trusty/;vagrant up;vagrant ssh'
-alias 14u-ssh='cd ~ssrivatsa/vagbox/14trusty/;vagrant ssh'
-alias 7c-start='cd ~ssrivatsa/vagbox/7centos/;vagrant up;vagrant ssh'
-alias 7c-ssh='cd ~ssrivatsa/vagbox/7centos/;vagrant ssh'
-alias 27c-start='cd ~ssrivatsa/vagbox/22-7centos/;vagrant up;vagrant ssh'
-alias 27c-ssh='cd ~ssrivatsa/vagbox/22-7centos/;vagrant ssh'
-alias 30f-ssh='cd ~ssrivatsa/vagbox/fedora30/;vagrant ssh'
-alias 30f-start='cd ~ssrivatsa/vagbox/fedora30/;vagrant up; vagrant ssh'
+alias gpa='for a in gh gl bb; do git push ${a} master;done'
+alias gdu='git diff -U0'
+
+alias 7c-start='echo "Need to move to using docker. Try that first. This is broken anyways 2020-12-28 Mon 10:22 AM"'
+#'cd ~ssrivatsa/vagbox/7centos/;vagrant up;vagrant ssh'
+alias 7c-ssh='echo "Need to move to using docker. Try that first. This is broken anyways 2020-12-28 Mon 10:22 AM"'
+#'cd ~ssrivatsa/vagbox/7centos/;vagrant ssh'
+alias 27c-start='echo "Need to move to using docker. Try that first. This is broken anyways 2020-12-28 Mon 10:22 AM"'
+#'cd ~ssrivatsa/vagbox/22-7centos/;vagrant up;vagrant ssh'
+alias 27c-ssh= 'echo "Need to move to using docker. Try that first. This is broken anyways 2020-12-28 Mon 10:22 AM"'
+alias 30f-ssh='echo "Need to move to using docker. Try that first. This is broken anyways  2020-12-28 Mon 10:22 AM"'
+alias 30f-start='echo "Need to move to using docker. Try that first. This is broken anyways 2020-12-28 Mon 10:22 AM"'
 
 # Process SFDC specific aliases
 #if [ -f "${HOME}/mydots/bash_sfdcaliases.bash" ]; then

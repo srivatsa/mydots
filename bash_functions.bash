@@ -153,8 +153,9 @@ vs(){
 #
 [ -f ~/.gnupg/gpg-agent.env ] && source ~/.gnupg/gpg-agent.env
 if [ -S "${GPG_AGENT_INFO%%:*}" ]; then
+  echo "Found GPG_AGENT_INFO ${GPG_AGENT_INFO%%:*}"
   export GPG_AGENT_INFO
-i#else
+#else
   #eval $(gpg-agent --daemon --log-file /tmp/gpg.log --write-env-file ~/.gnupg/gpg-agent.env --pinentry-program /usr/local/bin/pinentry-mac)
   #eval $(gpg-agent --daemon --log-file /tmp/gpg.log --pinentry-program /usr/local/bin/pinentry-mac)
 fi

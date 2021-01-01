@@ -5,8 +5,11 @@ map K i<Enter><Esc>
 map <F4> :NERDTreeToggle<CR>
 let NERDTreeShowHidden=1
 
-" map the F6 key to toggle Gundo tree
+" https://github.com/simnalamburt/vim-mundo
+" map the F6 key to toggle Mundo tree
 nnoremap <F6> :MundoToggle<CR>
+set undofile
+set undodir=~/.vim/undo
 
 if executable('rls')
     au User lsp_setup call lsp#register_server({
@@ -46,7 +49,6 @@ nmap <F3> i<C-R>=strftime(" %Y-%m-%d %a %I:%M %p")<CR><Esc>
 
 " All txt files to be treated as markdown
 autocmd BufEnter,BufRead,BufNewFile *.txt :set filetype=markdown
-
 "autocmd FileType python colorscheme molokai
 autocmd FileType sh colorscheme dracula
 autocmd FileType zsh colorscheme dracula
@@ -122,11 +124,9 @@ syntax on
 :set cursorline
 
 " lightly highlight the current column in which the cursor is placed (turn this off if it gets annoying)
-
 :set cursorcolumn
 
 " display a light vertical line at 80 chars
-
 :set colorcolumn=80
 
 " tell vim to scan the file for a modeline that contains in-line vim commands and options, just for that file

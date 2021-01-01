@@ -109,7 +109,5 @@ if [ -f ${HOME}/mydots/local.zsh ]; then
     source ${HOME}/mydots/local.zsh
 fi
 
-source /Users/ssrivatsa/Library/Preferences/org.dystroy.broot/launcher/bash/br
-
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh

@@ -7,10 +7,10 @@
 
 # This file is derived directly from its bash equiv
 #
-if [ -d "${HOME}/perl5/lib/perl5/" ]; then
-    export PERL5LIB=${HOME}/perl5/lib/perl5/
+if [ -d "/usr/local/Cellar/perl/5.32.0/lib/perl5" ]; then
+    export PERL5LIB=/usr/local/Cellar/perl/5.32.0/lib/perl5
 else
-    echo  "${HOME}/perl5/lib/perl5/ not found"
+    echo  "/usr/local/Cellar/perl/5.32.0/lib/perl5 not found"
 fi
 if [ -d ${HOME}/go ]; then
     export GOPATH=${HOME}/go && export GOBIN=${GOPATH}/bin
@@ -22,10 +22,10 @@ if [ -d "${HOME}/.cargo/bin/" ]; then
 else
     echo "${HOME}/.cargo/bin/ not found"
 fi
-if [ -d "${HOME}/git_wa/github/git-scripts/" ]; then
-    export GITSCRIPTS=${HOME}/git_wa/github/git-scripts/
+if [ -d "${HOME}/me/git_wa/github/git-scripts/" ]; then
+    export GITSCRIPTS=${HOME}/me/git_wa/github/git-scripts/
 else
-    echo "${HOME}/git_wa/github-com/git-scripts/ not found"
+    echo "${HOME}/me/git_wa/github/git-scripts/ not found"
 fi
 
 # If not running interactively, don't do anything
@@ -73,6 +73,7 @@ export PATH="$PYENV_ROOT/bin:$PATH"
 export WORKON_HOME=~/.virtualenvs
 export PROJECT_HOME=~/workspace
 eval "$(pyenv init -)"
+export VIRTUALENVWRAPPER_PYTHON=python3
 pyenv virtualenvwrapper
 pyenv virtualenvwrapper_lazy
 
@@ -85,6 +86,9 @@ fi
 # Set pager for BAT
 export BAT_PAGER="less"
 
+# Source broot
+source /Users/ssrivatsa/.config/broot/launcher/bash/br
+
 # perl (?)
-PERL_MB_OPT="--install_base \"/Users/ssrivatsa/perl5\""; export PERL_MB_OPT;
-PERL_MM_OPT="INSTALL_BASE=/Users/ssrivatsa/perl5"; export PERL_MM_OPT;
+PERL_MB_OPT="--install_base \"/usr/local/bin/perl\""; export PERL_MB_OPT;
+PERL_MM_OPT="INSTALL_BASE=/usr/local/bin/perl"; export PERL_MM_OPT;

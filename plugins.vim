@@ -19,7 +19,7 @@ Plugin 'tpope/vim-sensible'
 " plugin from http://vim-scripts.org/vim/scripts.html
 " Plugin 'L9'
 " Git plugin not hosted on GitHub
-Plugin 'git://git.wincent.com/command-t.git'
+"Plugin 'git://git.wincent.com/command-t.git'
 " git repos on your local machine (i.e. when working on your own plugin)
 "Plugin 'file:///home/gmarik/path/to/plugin'
 " The sparkup vim script is in a subdirectory of this repo called vim.
@@ -41,8 +41,8 @@ Plugin 'flazz/vim-colorschemes'
 Plugin 'godlygeek/tabular'
 Plugin 'altercation/vim-colors-solarized.git'
 Plugin 'gabrielelana/vim-markdown'
-Plugin 'dhruvasagar/vim-table-mode'
 Plugin 'simnalamburt/vim-mundo.git'
+Plugin 'dhruvasagar/vim-table-mode'
 Plugin 'yggdroot/indentline'
 " All of your Plugins must be added before the following line
 
